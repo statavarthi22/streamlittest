@@ -8,6 +8,9 @@ base_options = python.BaseOptions(model_asset_path='gesture_recognizer.task')
 options = vision.GestureRecognizerOptions(base_options=base_options)
 recognizer = vision.GestureRecognizer.create_from_options(options)
 
+st.title("Test")
+st.header("Test")
+
 picture=st.camera_input("Test")
 
 if picture:
@@ -20,6 +23,4 @@ if picture:
   # STEP 4: Recognize gestures in the input image.
   recognition_result = recognizer.recognize(image)
 
-st.title("Test")
-st.header("Test")
 st.write(recognition_result)
