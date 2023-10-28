@@ -23,4 +23,4 @@ if picture:
   # STEP 4: Recognize gestures in the input image.
   recognition_result = recognizer.recognize(image)
 
-st.write(recognition_result)
+  st.write(recognition_result)
