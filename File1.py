@@ -20,7 +20,7 @@
     print("Done with picture")
 
     if picture:
-    # Convert BGR to RGB
+        # Convert BGR to RGB
         picture_rgb = picture[:, :, ::-1]
         print("Processing...1")
 
